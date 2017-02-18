@@ -3,24 +3,28 @@
 		"name": "Samarth Jain",
 		"email": "j.samarth@outlook.com",
 		"password": "aaaaaaaa",
-		"usertype": "student"
+		"usertype": "student",
+		"id": "1100"
 	},
 	{
 		"name": "John Werner",
 		"email": "johnwerner@gmail.com",
 		"password": "bbbbbbbb",
-		"usertype": "student"
+		"usertype": "student",
+		"id": "1101"
 	},
 	{
 		"name": "Johnny Depp",
 		"email": "johnnydepp@outlook.com",
 		"password": "aaaaaaaa",
-		"usertype": "counselor"
+		"usertype": "counselor",
+		"id": "1102"
 	},
 	{
 		"name": "Tom Brady",
 		"email": "tbrady@gmail.com",
 		"password": "aaaaaaaa",
-		"usertype": "student"
+		"usertype": "student",
+		"id": "1103"
 	},
 ]

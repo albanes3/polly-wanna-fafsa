@@ -29,7 +29,7 @@ public class User implements Serializable{
 	// private Collection<Restaurant> restaurants;
 	
 	public enum UserType {
-		STUDENT, COUNSELOR, PARENT
+		STUDENT, COUNSELOR
 	}
 
 	public User(String firstName, String lastName, String email, String password, UserType userType) {
