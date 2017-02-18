@@ -1,0 +1,20 @@
+[
+	{
+		"email": "j.samarth@outlook.com",
+		"dateOfBirth": "10/27/1997",
+		"isMarried": false,
+		"isMale": true,
+		"hasGuardian": true,
+		"receivedFederalAid": false,
+		"employed": false
+	},
+	{
+		"email": "johnwerner@gmail.com",
+		"dateOfBirth": "10/22/1980",
+		"isMarried": false,
+		"isMale": true,
+		"hasGuardian": true,
+		"receivedFederalAid": false,
+		"employed": true
+	}
+]
