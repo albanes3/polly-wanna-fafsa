@@ -12,7 +12,7 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
 @Entity
-public class Guest implements Serializable{
+public class User implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,25 +20,33 @@ public class Guest implements Serializable{
 	private String firstName;
 	private String lastName;
 	private String email;
-	@ManyToMany
-	@JoinTable(name = "GUEST_RESTAURANT", joinColumns =
-		@JoinColumn(name = "ID_GUEST"), inverseJoinColumns = 
-		@JoinColumn(name = "ID_REST"))
-	private Collection<Restaurant> restaurants;
+	private String password;
+	private UserType userType;
+	// @ManyToMany
+	// @JoinTable(name = "GUEST_RESTAURANT", joinColumns =
+	// 	@JoinColumn(name = "ID_GUEST"), inverseJoinColumns = 
+	// 	@JoinColumn(name = "ID_REST"))
+	// private Collection<Restaurant> restaurants;
 	
-	public Guest(String firstName, String lastName, String email) {
+	public enum UserType {
+		STUDENT, COUNSELOR, PARENT
+	}
+
+	public User(String firstName, String lastName, String email, String password, UserType userType) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
+		this.password = password;
+		this.userType = userType;
 	}
 	
 	@Override
 	public String toString() {
-		return "Guest [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
+		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + " password=" + "]";
 	}
 	
-	public Guest() {
+	public User() {
 		super();
 	}
 	/**
@@ -70,12 +78,7 @@ public class Guest implements Serializable{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Collection<Restaurant> getRestaurants() {
-		return restaurants;
-	}
-	public void setRestaurants(Collection<Restaurant> restaurants) {
-		this.restaurants = restaurants;
-	}
+	
 	
 
 	
