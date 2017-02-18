@@ -55,3 +55,25 @@ A coding exception was thrown and uncaught in a Task.
 Full message: TypeError: NetworkError when attempting to fetch resource.
 Full stack: 
 *************************
+1487437247226	geckodriver	INFO	Listening on 127.0.0.1:55076
+1487437248280	mozprofile::profile	INFO	Using profile path /var/folders/6g/5lhl8msd5bb0w5y0yhl6n2qhswpf2d/T/rust_mozprofile.DdeTKlzonBD1
+1487437248281	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1487437248314	geckodriver::marionette	INFO	Connecting to Marionette on localhost:55086
+1487437248837	Marionette	INFO	Listening on port 55086
+1487437256007	geckodriver	INFO	Listening on 127.0.0.1:55123
+1487437257046	mozprofile::profile	INFO	Using profile path /var/folders/6g/5lhl8msd5bb0w5y0yhl6n2qhswpf2d/T/rust_mozprofile.s7tGjHsDvnBK
+1487437257047	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1487437257049	geckodriver::marionette	INFO	Connecting to Marionette on localhost:55132
+1487437257478	Marionette	INFO	Listening on port 55132
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
