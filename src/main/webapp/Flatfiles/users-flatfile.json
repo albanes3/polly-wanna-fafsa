@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Samarth Jain",
+		"email": "j.samarth@outlook.com",
+		"password": "aaaaaaaa",
+		"usertype": "student"
+	},
+	{
+		"name": "John Werner",
+		"email": "johnwerner@gmail.com",
+		"password": "bbbbbbbb",
+		"usertype": "student"
+	},
+	{
+		"name": "Johnny Depp",
+		"email": "johnnydepp@outlook.com",
+		"password": "aaaaaaaa",
+		"usertype": "counselor"
+	},
+	{
+		"name": "Tom Brady",
+		"email": "tbrady@gmail.com",
+		"password": "aaaaaaaa",
+		"usertype": "student"
+	},
+]
