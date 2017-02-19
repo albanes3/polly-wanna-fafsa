@@ -19,12 +19,17 @@
 
 		<!-- =========================== begins here ================================== -->
 <script type="text/javascript">
-	if(document.getElementById('male').checked) {
-		var ssscheck = document.getElementById('serviceSystem').removeAttribute("hidden");
-	}
-	else {
-		var ssscheck = document.getElementById('serviceSystem').setAttribute("hidden");
-	} 
+	$(document).ready(function() {
+		$(".restform").toggle();
+		$('input[type="checkbox"]').click(function() {
+			// if ($(this).hasClass("spouse-toggle")) {
+			// 	$(".spouse-group").toggle();
+			// }
+			if ($(this).hasClass("international-toggle")) {
+				$(".international-group").toggle();
+			}
+		});
+	});
 </script>
 
 <div class="container">
@@ -35,47 +40,46 @@
 				<div class="col-md-2">
 					<br/>
 					<br/>
-					<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+					<a href="contactDetails.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
 
 				</div>
-				<div class="col-md-8"><h1>Basic contact information</h1>
+				<div class="col-md-8"><h1>Residency Status</h1>
 					<br/>
 					<br/>
 					<form>
-						<div class="form-group">
-							<label class="control-label" for="fname">First Name</label>
-							<input class="form-control" id="fname" name="fname" placeholder="your first name" type="text"/>
-						</div> <br>
-
-						<div class="form-group">
-							<label class="control-label" for="lname">Last Name</label>
-							<input class="form-control" id="lname" name="lname" placeholder="your Last name" type="text"/>
-						</div> <br>
-
-
-						<label class="control-label" for="gender">Gender</label>
+						<label class="control-label" for="international-toggle">What is your residency status?</label>
 						<div class="radio">
-							<label><input type="radio" name="optionsGender" id="male" value="male">Male</label>
+							<label><input type="radio" name="international-toggle" id="citizen" value="citizen">US Citizen</label>
 						</div>
 
 						<div class="radio">
-							<label><input type="radio" name="optionsGender" id="female" value="female" checked>Female</label>
+							<label><input type="radio" name="international-toggle" id="resident" value="resident" checked>Legal US Resident</label>
+						</div>
+
+						<div class="radio">
+							<label><input type="radio" name="international-toggle" id="nonResident" value="nonResident" checked>Non-resident</label>
 						</div> <br>
 
-						<div id="serviceSystem" hidden><p>You have to register with the Selective Service System.</p></div>
+						<div title="A unique seven-, eight- or nine-digit number assigned to a noncitizen at the time his or her A-file is created" class="international-group" hidden> 
+							<label class="control-label" for="alienNumber">Your Alien Registration number</label>
+							<input class="form-control" name="alienNumber" placeholder="A XXXX" type="text"/>
+						</div> <br>
 
+						<div title="Your social security number" hidden> 
+							<label class="control-label" for="ssn">Your Social Security Number</label>
+							<input class="form-control" name="ssn" placeholder="XXX-XX-XXXX" type="text"/>
+						</div> <br>
 					</form>
 
 				</div>
-				<div class="col-md-2"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-				</div>
-
-
+				<div class="col-md-2"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
 			</div>
 
 		</div>
 	</div>
 </div>
+
+
 
 
 
