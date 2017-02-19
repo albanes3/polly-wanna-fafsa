@@ -7,22 +7,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$(".restform").toggle();
-			$('input[type="checkbox"]').click(function() {
-				if ($(this).hasClass("spouse-toggle")) {
-					$(".spouse-group").toggle();
-				}
-				if ($(this).hasClass("international-toggle")) {
-					$(".international-group").toggle();
-				}
-			});
-		});
-	</script>
 
 	<div class="container">
 		<h2>Student form</h2> 
@@ -30,49 +18,75 @@
 		<br> <br>
 
 		<!-- =========================== begins here ================================== -->
-		<div class="container">
-    <div class="panel panel-default">
-        <div class="panel-body">
-        <h1>Basic contact information</h1>
-        <br/>
-        <br/>
-        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-        <form>
-            <div class="form-group">
-                <label class="control-label" for="fname">First Name</label>
-                <input class="form-control" id="fname" name="fname" placeholder="your first name" type="text"/>
-            </div> <br>
+<script type="text/javascript">
+	if(document.getElementById('male').checked) {
+		var ssscheck = document.getElementById('serviceSystem').removeAttribute("hidden");
+	}
+	else {
+		var ssscheck = document.getElementById('serviceSystem').setAttribute("hidden");
+	} 
+</script>
 
-            <div class="form-group">
-                <label class="control-label" for="lname">Last Name</label>
-                <input class="form-control" id="lname" name="lname" placeholder="your Last name" type="text"/>
-            </div> <br>
+<div class="container">
+	<div class="panel panel-default">
+		<div class="panel-body">
+
+			<div class="row">
+				<div class="col-md-2">
+					<br/>
+					<br/>
+					<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+
+				</div>
+				<div class="col-md-8"><h1>Basic contact information</h1>
+					<br/>
+					<br/>
+					<form>
+						<div class="form-group">
+							<label class="control-label" for="fname">First Name</label>
+							<input class="form-control" id="fname" name="fname" placeholder="your first name" type="text"/>
+						</div> <br>
+
+						<div class="form-group">
+							<label class="control-label" for="lname">Last Name</label>
+							<input class="form-control" id="lname" name="lname" placeholder="your Last name" type="text"/>
+						</div> <br>
 
 
-            <label class="control-label" for="gender">Gender</label>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsGender" id="gender" value="male" checked>
-                    Male
-                </label>
-            </div>
+						<label class="control-label" for="gender">Gender</label>
+						<div class="radio">
+							<label><input type="radio" name="optionsGender" id="male" value="male">Male</label>
+						</div>
 
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsGender" id="gender" value="female">
-                    Female
-                </label>
-            </div> <br>
+						<div class="radio">
+							<label><input type="radio" name="optionsGender" id="female" value="female" checked>Female</label>
+						</div> <br>
 
-        </form>
-    </div>
+						<div id="serviceSystem" hidden><p>You have to register with the Selective Service System.</p></div>
+
+					</form>
+
+				</div>
+				<div class="col-md-2"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
 </div>
-</div>
 
 
-		<!-- =========================== begins here ================================== -->
+
+
+		<!-- =========================== ends here ================================== -->
 	</div>
 
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
