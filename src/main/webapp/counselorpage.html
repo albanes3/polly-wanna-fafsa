@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Student Form</title>
+	<title>Counselor Form</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -25,11 +25,14 @@
 	</script>
 
 	<div class="container">
-		<h2>Student form</h2> 
+		<h2>Counselor form</h2> 
 		<h4>Welcome back, Michael</h4> 	
 		<br> <br>
+
+		<p>Here is the student page for John Werner</p> <br> <br>	
+
 		<form>
-			<div class="form-group"> <!-- Date input -->
+			<div class="form-group has-error"> <!-- Date input -->
 				<label class="control-label" for="date">Date of Birth</label>
 				<input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
 			</div> <br>
@@ -38,7 +41,7 @@
 				<label><input type="checkbox" class="spouse-toggle"> Do you have a spouse?</label>
 			</div>
 
-			<div class="spouse-group" hidden> 
+			<div class="spouse-group has-error" hidden> 
 				<label class="control-label" for="date">Spouse yearly income</label>
 				<input class="form-control" id="date" name="date" placeholder="$XXXXX" type="text"/>
 			</div> <br>
@@ -57,6 +60,8 @@
 					Female
 				</label>
 			</div> <br>
+
+			<hr>
 
 			<div class="checkbox">
 				<label><input type="checkbox" class="hasGuardian"> Do you have guardians?</label>
