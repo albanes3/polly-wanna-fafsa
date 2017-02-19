@@ -25,6 +25,11 @@
 
 		<form>
 			<div class="form-group">
+				<label for="name">Name</label>
+				<input type="name" class="form-control" id="name" placeholder="Name">
+			</div>
+
+			<div class="form-group">
 				<label for="email">Email address</label>
 				<input type="email" class="form-control" id="email" placeholder="Email">
 			</div>
@@ -36,6 +41,15 @@
 				<label for="confirmPassword">Confirm Password</label>
 				<input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
 			</div>
+			<br/>
+			<label class="control-label" for="userType">Who are you?</label>
+						<div class="radio">
+							<label><input type="radio" name="userType" id="student" value="student">Student</label>
+						</div>
+
+						<div class="radio">
+							<label><input type="radio" name="userType" id="counselor" value="counselor" checked>Counselor</label>
+						</div> <br>
 
 			<button type="submit" class="btn btn-default">Register</button>
 

@@ -19,15 +19,6 @@
 
 		<!-- =========================== begins here ================================== -->
 
-		<script type="text/javascript">
-			if(document.getElementById('male').checked) {
-				var ssscheck = document.getElementById('serviceSystem').removeAttribute("hidden");
-			}
-			else {
-				var ssscheck = document.getElementById('serviceSystem').setAttribute("hidden");
-			} 
-		</script>
-
 		<div class="container">
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -36,42 +27,35 @@
 						<div class="col-md-2">
 							<br/>
 							<br/>
-							<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+							<a href="contactDetails.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
 
 						</div>
-						<div class="col-md-8"><h1>Basic contact information</h1>
+						<div class="col-md-8"><h1>Marital Status</h1>
 							<br/>
 							<br/>
 							<form>
-								<div class="form-group">
-									<label class="control-label" for="fname">First Name</label>
-									<input class="form-control" id="fname" name="fname" placeholder="your first name" type="text"/>
-								</div> <br>
-
-								<div class="form-group">
-									<label class="control-label" for="lname">Last Name</label>
-									<input class="form-control" id="lname" name="lname" placeholder="your Last name" type="text"/>
-								</div> <br>
-
-
-								<label class="control-label" for="gender">Gender</label>
+								<label class="control-label" for="marital-toggle">What is your marital status?</label>
 								<div class="radio">
-									<label><input type="radio" name="optionsGender" id="male" value="male">Male</label>
+									<label><input type="radio" name="marital-toggle" id="single" value="single">Single</label>
 								</div>
 
 								<div class="radio">
-									<label><input type="radio" name="optionsGender" id="female" value="female" checked>Female</label>
-								</div> <br>
+									<label><input type="radio" name="marital-toggle" id="married_remarried" value="married_remarried" checked>Married or remarried</label>
+								</div>
 
-								<div id="serviceSystem"><p>You have to register with the Selective Service System.</p></div>
+								<div class="radio">
+									<label><input type="radio" name="marital-toggle" id="separated" value="separated" checked>Separated</label>
+								</div>
 
+								<div class="radio">
+									<label><input type="radio" name="marital-toggle" id="divorced" value="divorced" checked>Divorced or Widowed</label>
+								</div>
+
+								
 							</form>
 
 						</div>
-						<div class="col-md-2"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-						</div>
-
-
+						<div class="col-md-2"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
 					</div>
 
 				</div>
@@ -91,5 +75,6 @@
 	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+
 
 

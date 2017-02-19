@@ -1,7 +1,28 @@
-<script type="text/javascript">
-	$(document).ready(function() {
-		$(".restform").toggle();
-		$('input[type="checkbox"]').click(function() {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Student Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+	<div class="container">
+		<h2>Student form</h2> 
+		<h4>Welcome back, Michael</h4> 	
+		<br> <br>
+
+		<!-- =========================== begins here ================================== -->
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".restform").toggle();
+				$('input[type="checkbox"]').click(function() {
 			// if ($(this).hasClass("spouse-toggle")) {
 			// 	$(".spouse-group").toggle();
 			// }
@@ -9,56 +30,68 @@
 				$(".international-group").toggle();
 			}
 		});
-	});
-</script>
+			});
+		</script>
 
-<div class="container">
-	<div class="panel panel-default">
-		<div class="panel-body">
+		<div class="container">
+			<div class="panel panel-default">
+				<div class="panel-body">
 
-			<div class="row">
-				<div class="col-md-2">
-					<br/>
-					<br/>
-					<a href="contactDetails.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+					<div class="row">
+						<div class="col-md-2">
+							<br/>
+							<br/>
+							<a href="contactDetails.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+
+						</div>
+						<div class="col-md-8"><h1>Residency Status</h1>
+							<br/>
+							<br/>
+							<form>
+								<label class="control-label" for="international-toggle">What is your residency status?</label>
+								<div class="radio">
+									<label><input type="radio" name="international-toggle" id="citizen" value="citizen">US Citizen</label>
+								</div>
+
+								<div class="radio">
+									<label><input type="radio" name="international-toggle" id="resident" value="resident" checked>Legal US Resident</label>
+								</div>
+
+								<div class="radio">
+									<label><input type="radio" name="international-toggle" id="nonResident" value="nonResident" checked>Non-resident</label>
+								</div> <br>
+
+								<div title="A unique seven-, eight- or nine-digit number assigned to a noncitizen at the time his or her A-file is created" class="international-group"> 
+									<label class="control-label" for="alienNumber">Your Alien Registration number</label>
+									<input class="form-control" name="alienNumber" placeholder="A XXXX" type="text"/>
+								</div> <br>
+
+								<div title="Your social security number"> 
+									<label class="control-label" for="ssn">Your Social Security Number</label>
+									<input class="form-control" name="ssn" placeholder="XXX-XX-XXXX" type="text"/>
+								</div> <br>
+							</form>
+
+						</div>
+						<div class="col-md-2"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+					</div>
 
 				</div>
-				<div class="col-md-8"><h1>Residency Status</h1>
-					<br/>
-					<br/>
-					<form>
-						<label class="control-label" for="international-toggle">What is your residency status?</label>
-						<div class="radio">
-							<label><input type="radio" name="international-toggle" id="citizen" value="citizen">US Citizen</label>
-						</div>
-
-						<div class="radio">
-							<label><input type="radio" name="international-toggle" id="resident" value="resident" checked>Legal US Resident</label>
-						</div>
-
-						<div class="radio">
-							<label><input type="radio" name="international-toggle" id="nonResident" value="nonResident" checked>Non-resident</label>
-						</div> <br>
-
-						<div title="A unique seven-, eight- or nine-digit number assigned to a noncitizen at the time his or her A-file is created" class="international-group" hidden> 
-							<label class="control-label" for="alienNumber">Your Alien Registration number</label>
-							<input class="form-control" name="alienNumber" placeholder="A XXXX" type="text"/>
-						</div> <br>
-
-						<div title="Your social security number" hidden> 
-							<label class="control-label" for="ssn">Your Social Security Number</label>
-							<input class="form-control" name="ssn" placeholder="XXX-XX-XXXX" type="text"/>
-						</div> <br>
-					</form>
-
-				</div>
-				<div class="col-md-2"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
 			</div>
-
 		</div>
+
+
+
+
+		<!-- =========================== ends here ================================== -->
 	</div>
-</div>
 
 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
 
 
